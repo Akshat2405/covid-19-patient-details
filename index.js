@@ -1,6 +1,4 @@
 console.log("This is my new project");
-
-
 function updatecases(){
     fetch('https://api.covid19india.org/data.json')
     .then(response=> response.text())
@@ -25,6 +23,5 @@ function updatecases(){
 }
 updatecases();
 setInterval(()=>{
-    console.log("ohh");
     updatecases()},3000   
 )
